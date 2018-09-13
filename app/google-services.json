@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "378540017739",
+    "firebase_url": "https://organizze-ceeac.firebaseio.com",
+    "project_id": "organizze-ceeac",
+    "storage_bucket": "organizze-ceeac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:378540017739:android:7b3c75432b5272b7",
+        "android_client_info": {
+          "package_name": "br.com.udemy.organizze"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "378540017739-0o7g5v7ekp8hpdaqi8a64f7lhsqcc8cq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.udemy.organizze",
+            "certificate_hash": "41ae8ce7b2a12330c3896c23bdc1736dfafdb9c2"
+          }
+        },
+        {
+          "client_id": "378540017739-accm541iogoaktobl64bim621oliposs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRR10FZmByEoB7sDtf0A-V1A6Y7WEik0k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "378540017739-accm541iogoaktobl64bim621oliposs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
