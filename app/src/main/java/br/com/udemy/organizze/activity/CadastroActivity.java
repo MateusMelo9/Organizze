@@ -19,6 +19,7 @@ import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 
 import br.com.udemy.organizze.R;
 import br.com.udemy.organizze.activity.config.ConfiguracaoFirebase;
+import br.com.udemy.organizze.activity.helper.Base64Custom;
 import br.com.udemy.organizze.activity.model.Usuario;
 
 public class CadastroActivity extends AppCompatActivity {
@@ -68,7 +69,7 @@ public class CadastroActivity extends AppCompatActivity {
         });
     }
 
-    public void cadastrarUsuario(Usuario usuario){
+    public void cadastrarUsuario(final Usuario usuario){
         autenticacao = ConfiguracaoFirebase.getFirebaseAutenticacao();
         autenticacao.createUserWithEmailAndPassword(
                 usuario.getEmail(),usuario.getSenha()
@@ -76,6 +77,9 @@ public class CadastroActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
+                    String idUsuario = Base64Custom.codificarBase64(usuario.getEmail());
+                    usuario.setIdUsuario(idUsuario);
+                    usuario.salvar();
                     finish();
                 }else {
                     String erro ="";
